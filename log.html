@@ -110,7 +110,7 @@
               <div class="popup2-content">
                 <p>Forgot Password?
                 <br><br><sub class="emailtext2">Email</sub></p>
-                <input type="email2" id="email2" placeholder="Enter your email2" required>
+                <input type="email" id="email"  required>
                 <button onclick="submitEmail()">send</button>&nbsp;
                 <button class="close-btn2" onclick="closePopup2()">cancel</button>
               </div>
@@ -193,7 +193,7 @@
         }
     
         function submitEmail() {
-          const email = document.getElementById('email2').value;
+          const email = document.getElementById('email').value;
     
           if (validateEmail(email)) {
             alert(`Email has been sent: ${email}`);
